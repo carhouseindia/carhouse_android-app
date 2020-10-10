@@ -11,6 +11,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.example.carhouse.R;
+import com.example.carhouse.adapter.CarListAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 
@@ -31,7 +35,8 @@ public class CarList extends MainClass {
     @BindView(R.id.imgClose)
     AppCompatImageView imgClose;
 
-
+    CarListAdapter adapter;
+    private List<String> litData=new ArrayList<String>();
 
     @Override
     protected int getActivityLayout() {
@@ -40,6 +45,9 @@ public class CarList extends MainClass {
 
     @Override
     protected void intView() {
+        intRecycleView(recyclerList);
+        adapter=new CarListAdapter(CarList.this,litData);
+        recyclerList.setAdapter(adapter);
 
     }
 

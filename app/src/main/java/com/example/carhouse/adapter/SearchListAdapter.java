@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.carhouse.R;
 import com.example.carhouse.activity.CarList;
-import com.example.carhouse.activity.MainClass;
 
 import java.util.ArrayList;
 import java.util.List;
