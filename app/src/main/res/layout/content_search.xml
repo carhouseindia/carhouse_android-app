@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context=".activity.SearchActivity"
+    tools:showIn="@layout/activity_search">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/tendp"
+        android:id="@+id/recSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoResultsFound"
+        style="@style/textviewStyle"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:text="@string/no_results_found"
+        android:textSize="@dimen/twentysp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

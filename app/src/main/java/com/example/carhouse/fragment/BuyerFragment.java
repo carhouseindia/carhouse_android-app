@@ -1,11 +1,19 @@
 package com.example.carhouse.fragment;
 
+import android.view.View;
+
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatEditText;
 
 import com.example.carhouse.R;
 import com.example.carhouse.activity.MainClass;
 
+import butterknife.BindView;
+
 public class BuyerFragment extends MainFragmentClass {
+
+    @BindView(R.id.edtsearch)
+    AppCompatEditText edtsearch;
 
     @NonNull
     public static BuyerFragment newInstance()
@@ -25,7 +33,12 @@ public class BuyerFragment extends MainFragmentClass {
 
     @Override
     protected void intView() {
-
+        edtsearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navigator.navigateToSearchActivity(getActivity());
+            }
+        });
     }
 
     @Override

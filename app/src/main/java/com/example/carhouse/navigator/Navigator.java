@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import com.example.carhouse.activity.DashboardActivity;
 import com.example.carhouse.activity.LoginActivity;
 import com.example.carhouse.activity.OTPActivity;
+import com.example.carhouse.activity.SearchActivity;
 import com.example.carhouse.activity.SellCarCreateActivity;
 
 public class Navigator {
@@ -33,6 +34,10 @@ public class Navigator {
     }
     public void navigateToOTPScreen(@NonNull Activity context) {
         Intent intent = new Intent(context, OTPActivity.class);
+        context.startActivity(intent);
+    }
+    public void navigateToSearchActivity(@NonNull Activity context) {
+        Intent intent = new Intent(context, SearchActivity.class);
         context.startActivity(intent);
     }
 }

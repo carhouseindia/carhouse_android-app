@@ -8,7 +8,10 @@ import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.carhouse.R;
 import com.example.carhouse.navigator.Navigator;
@@ -84,5 +87,12 @@ public abstract class MainClass extends AppCompatActivity {
 
     public void setToastMessage(String message) {
         Toast.makeText(MainClass.this, message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void intRecycleView(@NonNull RecyclerView recyclerView)
+    {
+        recyclerView.setHasFixedSize(true);
+        final LinearLayoutManager mLayoutManager = new LinearLayoutManager(MainClass.this);
+        recyclerView.setLayoutManager(mLayoutManager);
     }
 }

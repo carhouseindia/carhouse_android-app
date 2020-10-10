@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_margin="@dimen/tendp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtsearch"
+            android:layout_width="match_parent"
+            android:padding="@dimen/tendp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_white"
+            android:focusableInTouchMode="false"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="none"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/tendp"
+            android:paddingRight="@dimen/tendp"
+            android:singleLine="true"
+            android:textSize="@dimen/twelesp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/tendp"
+
+
+            />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
