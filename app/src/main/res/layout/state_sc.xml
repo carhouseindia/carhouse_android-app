@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/tendp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/fivedp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:id="@+id/inputlayoutRTO"
+            style="@style/TextInputLayout_OutlineBox"
+            app:hintTextAppearance="@style/TextInputApperance"
+            android:theme="@style/outlinedEditText"
+            android:layout_marginEnd="@dimen/tendp"
+            android:hint="Enter RTO code">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtRTO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/edit_text"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="10"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:visibility="gone"
+            android:layout_weight="0.3"
+            android:id="@+id/varifyBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/varify"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/tendp"
+    >
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbDisel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diesel"
+            />
+
+        <RadioButton
+            android:layout_marginStart="@dimen/tendp"
+            android:id="@+id/rbPetrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diesel"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button 1"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button 2"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button 3"
+            />
+    </LinearLayout>
+</LinearLayout>

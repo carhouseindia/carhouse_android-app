@@ -1,0 +1,74 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextInputLayout_OutlineBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <item name="hintTextAppearance">@style/HintText_OutlineBox</item>
+    </style>
+
+    <style name="HintText_OutlineBox" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="outlinedEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/edit_text</item>
+        <item name="colorAccent">@color/grey</item>
+        <item name="colorControlNormal">@color/lightgrey</item>
+        <item name="colorControlActivated">@color/grey</item>
+
+    </style>
+
+    <style name="textviewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/edit_text</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="TextInputApperance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/edit_text_hint</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/thirteensp</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">0dp</item>
+        <item name="tabPaddingEnd">0dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+
+    </style>
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/white_54</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

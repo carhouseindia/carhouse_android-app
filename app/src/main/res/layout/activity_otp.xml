@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/tendp"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/lnrBack"
+        android:padding="@dimen/tendp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back_left"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="center"
+            android:id="@+id/imgtxtBack"
+            style="@style/textviewStyle"
+            android:layout_width="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/light_grey"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/lnrBack"
+        android:layout_marginTop="@dimen/twentydp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="center"
+            style="@style/textviewStyle"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sixteensp"
+            android:textAlignment="center"
+            android:text="Verify One Time Password(OTP)"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/tendp"
+            android:layout_gravity="center"
+            style="@style/textviewStyle"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sixteensp"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:text="Please enter 4 digit OTP sent to mobile no."
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/tendp"
+            android:id="@+id/txtMobileNumber"
+            android:layout_gravity="center"
+            style="@style/textviewStyle"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sixteensp"
+            android:textAlignment="center"
+            android:text="9111111"
+            />
+        <LinearLayout
+            android:layout_marginTop="@dimen/tendp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/fivedp"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:id="@+id/inputlayoutOTP"
+                style="@style/TextInputLayout_OutlineBox"
+                app:hintTextAppearance="@style/TextInputApperance"
+                android:theme="@style/outlinedEditText"
+                android:layout_marginEnd="@dimen/tendp"
+                android:hint="@string/enter_otp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/edit_text"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:visibility="gone"
+                android:layout_weight="0.3"
+                android:id="@+id/varifyBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/varify"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnrWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/tendp"
+            android:gravity="center"
+            android:padding="@dimen/tendp"
+            >
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCancel"
+                android:layout_marginStart="@dimen/fivedp"
+                android:layout_width="wrap_content"
+                style="@style/textviewStyle"
+                android:text="@string/cancel"
+                android:textColor="@color/grey"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginStart="@dimen/tendp"
+                android:id="@+id/btnLogin"
+                android:text="Log in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

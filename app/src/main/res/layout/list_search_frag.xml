@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputlayoutSearch"
+        android:theme="@style/outlinedEditText"
+        style="@style/TextInputLayout_OutlineBox"
+        app:hintTextAppearance="@style/TextInputApperance"
+        android:hint="@string/search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/edit_text"
+            android:hint=""
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="10"
+            android:drawableEnd="@drawable/ic_close"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tendp"
+        android:layout_marginBottom="@dimen/tendp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

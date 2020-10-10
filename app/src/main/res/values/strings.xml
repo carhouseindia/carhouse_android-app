@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Car House</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="varify">Varify</string>
+    <string name="login_with_OTP">Login with OTP</string>
+    <string name="invalid_mob_num">Invalid mobile number</string>
+    <string name="enter_mob_num">Please enter mobile number</string>
+    <string name="back">back</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="cancel">Cancel</string>
+    <string name="login_sign_up">Login / Sign up</string>
+    <string name="buyer">Buyer</string>
+    <string name="seller">Seller</string>
+    <string name="menu">Menu</string>
+    <string name="sell_my_car">Sell My CAR</string>
+    <string name="search">Search</string>
+    <string name="diesel">Diesel</string>
+    <string name="petrol">Petrol</string>
+</resources>

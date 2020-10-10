@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/tendp"
+    tools:context=".activity.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close"
+        android:padding="@dimen/tendp"
+        />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textviewStyle"
+            android:text="Login / Sign up"
+            android:padding="@dimen/tendp"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/fivedp"
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:id="@+id/inputlayoutMob"
+                style="@style/TextInputLayout_OutlineBox"
+                app:hintTextAppearance="@style/TextInputApperance"
+                android:theme="@style/outlinedEditText"
+                android:layout_marginEnd="@dimen/tendp"
+                app:suffixText="Verify"
+                app:prefixText="+91"
+                app:suffixTextColor="@color/colorPrimaryDark"
+                android:hint="@string/mobile_number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/edit_text"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:visibility="gone"
+                android:layout_weight="0.3"
+                android:id="@+id/varifyBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/varify"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnrWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/tendp"
+            android:gravity="center"
+            android:padding="@dimen/tendp"
+            android:background="@drawable/whats_app_boarder"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:visibility="gone"
+                android:layout_width="@dimen/twentyfivedp"
+                android:layout_height="@dimen/twentyfivedp"
+                app:srcCompat="@drawable/ic_whatsapp"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginStart="@dimen/fivedp"
+                android:layout_width="wrap_content"
+                style="@style/textviewStyle"
+                android:text="@string/login_sign_up"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
