@@ -17,4 +17,6 @@
     <string name="diesel">Diesel</string>
     <string name="petrol">Petrol</string>
     <string name="no_results_found">No result found</string>
+    <string name="min_price">Min price</string>
+    <string name="max_price">Min price</string>
 </resources>

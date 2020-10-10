@@ -6,12 +6,12 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/search_actvity_toolbar"></include>
+        layout="@layout/search_actvity_toolbar"/>
 
     <include
         layout="@layout/content_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"></include>
+        android:layout_below="@+id/toolbar"/>
 
 </RelativeLayout>

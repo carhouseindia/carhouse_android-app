@@ -5,7 +5,9 @@ import android.content.Intent;
 
 import androidx.annotation.NonNull;
 
+import com.example.carhouse.activity.CarList;
 import com.example.carhouse.activity.DashboardActivity;
+import com.example.carhouse.activity.FilterAndSort;
 import com.example.carhouse.activity.LoginActivity;
 import com.example.carhouse.activity.OTPActivity;
 import com.example.carhouse.activity.SearchActivity;
@@ -38,6 +40,16 @@ public class Navigator {
     }
     public void navigateToSearchActivity(@NonNull Activity context) {
         Intent intent = new Intent(context, SearchActivity.class);
+        context.startActivity(intent);
+    }
+
+    public void navigateToFilterAndSorActivity(@NonNull Activity context) {
+        Intent intent = new Intent(context, FilterAndSort.class);
+        context.startActivity(intent);
+    }
+
+    public void navigateToCarListActivity(@NonNull Activity context) {
+        Intent intent = new Intent(context, CarList.class);
         context.startActivity(intent);
     }
 }

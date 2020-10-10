@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginTop="@dimen/tendp"
+    android:layout_marginBottom="@dimen/tendp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/lnrBtns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/tendp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lnrByLocation"
+                android:padding="@dimen/tendp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="1"
+                    style="@style/textviewStyle"
+                    android:text="By location"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:id="@+id/txtByLocation"
+                    style="@style/textviewStyle"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:text="a"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/lnrByBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="1"
+                    style="@style/textviewStyle"
+                    android:text="By Budget"
+                    />
+                <LinearLayout
+                    android:layout_marginTop="@dimen/fivedp"
+                    android:padding="@dimen/tendp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:id="@+id/inputlayoutMINbud"
+                        style="@style/TextInputLayout_OutlineBox"
+                        app:hintTextAppearance="@style/TextInputApperance"
+                        android:theme="@style/outlinedEditText"
+                        android:layout_marginEnd="@dimen/tendp"
+                        android:hint="@string/min_price">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtMINbud"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/edit_text"
+                            android:hint=""
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_weight="0.7"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:id="@+id/inputlayoutMAXBud"
+                        style="@style/TextInputLayout_OutlineBox"
+                        app:hintTextAppearance="@style/TextInputApperance"
+                        android:theme="@style/outlinedEditText"
+                        android:layout_marginEnd="@dimen/tendp"
+                        app:suffixText="Verify"
+                        app:prefixText="+91"
+                        app:suffixTextColor="@color/colorPrimaryDark"
+                        android:hint="@string/max_price">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtMAXBud"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/edit_text"
+                            android:hint=""
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/lnrBtns"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_white"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnrSubmit"
+            android:padding="@dimen/tendp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/twentydp"
+                android:layout_height="@dimen/twentydp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/filter_black"
+                android:visibility="gone"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginStart="@dimen/fivedp"
+                style="@style/textviewStyle"
+                android:layout_width="wrap_content"
+                android:text="Submit"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -39,7 +39,7 @@ public class SearchActivity extends MainClass {
     @Override
     protected void intView() {
         intRecycleView(recSearch);
-        adapter= new SearchListAdapter(SearchActivity.this,litData,"");
+        adapter= new SearchListAdapter(SearchActivity.this,litData,"SEARCH");
         recSearch.setAdapter(adapter);
     }
 

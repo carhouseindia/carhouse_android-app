@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:layout_marginTop="@dimen/tendp"
+    android:id="@+id/lnrParent"
     >
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
