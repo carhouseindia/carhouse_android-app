@@ -76,10 +76,11 @@
                             android:textColor="@color/black"/>
 
                         <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_marginStart="@dimen/fivedp"
                             android:id="@+id/txtPrice"
                             android:layout_width="wrap_content"
                             style="@style/textviewStyle"
-                            text="78000"
+                            android:text="78000"
                             android:textColor="@color/black"/>
 
 

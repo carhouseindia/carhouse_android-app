@@ -1,30 +1,24 @@
 package com.example.carhouse.adapter;
 
-import android.content.Context;
-import android.content.Intent;
+import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.carhouse.R;
-import com.example.carhouse.activity.CarList;
-
+import com.example.carhouse.activity.MainClass;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CarListAdapter extends RecyclerView.Adapter<CarListVH> {
 
     private List<String> litData=new ArrayList<String>();
-    private Context context;
+    private Activity context;
     String type;
 
-    public CarListAdapter(Context context,List<String> litData) {
+    public CarListAdapter(Activity context, List<String> litData) {
         this.litData = litData;
         this.context = context;
     }
@@ -53,20 +47,22 @@ class CarListVH extends RecyclerView.ViewHolder implements View.OnClickListener 
 
     View view;
     String type;
-    Context context;
+    Activity context;
 
-    public CarListVH(@NonNull View itemView, Context context)
+    public CarListVH(@NonNull View itemView, Activity context)
     {
         super(itemView);
         view = itemView;
         this.context = context;
 
 
-//        view.setOnClickListener(this);
+        view.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-
+        if(v==view){
+            ((MainClass)context).navigator.navigateToCarDetailsActivity(context);
+        }
     }
 }

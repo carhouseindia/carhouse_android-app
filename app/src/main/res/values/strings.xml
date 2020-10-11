@@ -20,4 +20,5 @@
     <string name="min_price">Min price</string>
     <string name="max_price">Min price</string>
     <string name="Rs">₹</string>
+    <string name="makeanoffer">Make an Offer</string>
 </resources>

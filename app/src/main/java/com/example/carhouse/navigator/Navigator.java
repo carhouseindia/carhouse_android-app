@@ -5,6 +5,7 @@ import android.content.Intent;
 
 import androidx.annotation.NonNull;
 
+import com.example.carhouse.activity.CarDetailsActivity;
 import com.example.carhouse.activity.CarList;
 import com.example.carhouse.activity.DashboardActivity;
 import com.example.carhouse.activity.FilterAndSort;
@@ -50,6 +51,11 @@ public class Navigator {
 
     public void navigateToCarListActivity(@NonNull Activity context) {
         Intent intent = new Intent(context, CarList.class);
+        context.startActivity(intent);
+    }
+
+    public void navigateToCarDetailsActivity(@NonNull Activity context) {
+        Intent intent = new Intent(context, CarDetailsActivity.class);
         context.startActivity(intent);
     }
 }

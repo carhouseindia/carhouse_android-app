@@ -55,6 +55,7 @@
     <dimen name="fourtysp">40sp</dimen>
     <dimen name="edit_text">13sp</dimen>
     <dimen name="edit_text_hint">11sp</dimen>
+    <dimen name="twofitydp">250dp</dimen>
 
 
 
