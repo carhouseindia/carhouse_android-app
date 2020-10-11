@@ -191,4 +191,11 @@ public class DashboardActivity extends MainClass {
             }
         }, 2000);
     }
+
+    public void switchTab(int pos)
+    {
+        if(viewpager!=null) {
+            viewpager.setCurrentItem(pos);
+        }
+    }
 }

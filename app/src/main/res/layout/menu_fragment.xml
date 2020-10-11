@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/tendp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+    <!--<RelativeLayout
+        android:visibility="gone"
+        android:padding="@dimen/tendp"
+        android:id="@+id/lnrCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txtCity"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            style="@style/textviewStyle"
+            android:text="City"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/txtCityName"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            style="@style/textviewStyle"
+            android:textStyle="bold"
+            android:text="Mumbai"
+            />
+
+    </RelativeLayout>
+    <view
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onedp"
+        android:background="@color/white"/>-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtBuyCar"
+        android:padding="@dimen/tendp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        style="@style/textviewStyle"
+        android:text="Buy user car"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onedp"
+        android:background="@color/ligh_gray_rating"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textStyle="bold"
+        android:id="@+id/txtSellCar"
+        android:padding="@dimen/tendp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        style="@style/textviewStyle"
+        android:text="Sell Car"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onedp"
+        android:background="@color/ligh_gray_rating"/>
+
+</LinearLayout>

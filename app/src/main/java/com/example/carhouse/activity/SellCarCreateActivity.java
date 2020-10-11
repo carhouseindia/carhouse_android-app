@@ -20,10 +20,7 @@ import android.widget.TextView;
 
 import com.example.carhouse.R;
 import com.example.carhouse.adapter.ViewPagerAdapter;
-import com.example.carhouse.fragment.BuyerFragment;
-import com.example.carhouse.fragment.MenuFragment;
 import com.example.carhouse.fragment.SearchListSellCreateFragment;
-import com.example.carhouse.fragment.SellerFragment;
 import com.example.carhouse.fragment.VarientSCFrag;
 import com.google.android.material.tabs.TabLayout;
 
